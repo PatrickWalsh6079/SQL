@@ -1,0 +1,18 @@
+/* create a new database */
+CREATE DATABASE database2;
+
+/* create a new table */
+CREATE TABLE `database2`.`shopping` (`id` INT NOT NULL, 
+`item_name` VARCHAR(45) NOT NULL, 
+`cost` INT NOT NULL, 
+`seller_id` VARCHAR(45) NOT NULL, 
+`num_bids` VARCHAR(45) NOT NULL, 
+PRIMARY KEY (`id`));
+  
+/* add a column to a table */
+ALTER TABLE database2.customers
+ADD COLUMN job VARCHAR(45) AFTER zip;
+
+/* alter the column type */
+ALTER TABLE database2.shopping
+MODIFY COLUMN cost DECIMAL(38,2);
