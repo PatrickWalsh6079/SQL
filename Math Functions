@@ -1,0 +1,16 @@
+/* math with custom columns */
+SELECT item_name, cost, cost-5 AS discount FROM shopping;
+
+/* uppercase return */
+SELECT name, UPPER(name) FROM customers;
+
+/* square root of number */
+SELECT cost, SQRT(cost) FROM shopping;
+
+/* AGGREGATE FUNCTIONS */
+
+/* average of numbers */
+SELECT AVG(cost) FROM shopping;
+
+/* sum of numbers */
+SELECT SUM(cost) FROM shopping;
