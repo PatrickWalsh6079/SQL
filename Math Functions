@@ -14,3 +14,9 @@ SELECT AVG(cost) FROM shopping;
 
 /* sum of numbers */
 SELECT SUM(cost) FROM shopping;
+
+/* use COUNT for specific column value */
+SELECT COUNT(item_name) FROM shopping WHERE seller_id=64;
+
+/* run multiple aggregate functions */
+SELECT COUNT(*) AS Total_Count, MAX(cost) AS Highest, MIN(cost) AS Lowest, AVG(cost) AS Average FROM shopping;
