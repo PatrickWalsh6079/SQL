@@ -1,0 +1,9 @@
+* CHANGE TABLES */
+
+/* insert new data into table */
+INSERT INTO `database2`.`customers` (`id`, `name`, `city`, `state`, `zip`) VALUES ('5', 'Patrick', 'Clayton', 'NC', '27527');
+
+/* update a table with new info */
+UPDATE customers
+SET job = 'Programmer'
+WHERE id = 3;
