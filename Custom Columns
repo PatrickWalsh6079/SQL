@@ -1,0 +1,10 @@
+/* print text along with column values with CONCAT */
+SELECT CONCAT('Hello, ',name,' from ', state,'!') FROM customers;
+
+/* create custom column with CONCAT AS */
+SELECT CONCAT('Hello, ',name,' from ', state,'!') AS Greeting FROM customers;
+
+/* math with custom columns */
+/* - to subtract, + to add, * to multiply, / to divide */
+SELECT item_name, cost, cost-5 AS discount FROM shopping;
+
