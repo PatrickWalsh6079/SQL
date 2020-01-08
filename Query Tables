@@ -1,0 +1,31 @@
+/* QUERY TABLES */
+
+/* view entire customers table in database2 */
+SELECT * FROM database2.customers;
+
+/* retrieve multiple entries from table */
+SELECT name, zip FROM customers;
+
+/* retreive only unique values from column */
+SELECT DISTINCT job FROM customers;
+
+/* limit the number of results */
+SELECT id, name FROM customers LIMIT 3;
+
+/* limit the number of results within range */
+SELECT id, name FROM customers LIMIT 2, 5;
+
+/* show columns in the customers table */
+SHOW COLUMNS FROM database2.customers;
+
+/* sort results alphabetically or numerically */
+SELECT name FROM customers ORDER BY name;
+SELECT zip FROM customers ORDER BY zip;
+
+/* sort by multiple values */
+/* this sorts alphabetically by state, then by city */
+SELECT name, city, state FROM customers ORDER BY state, city;
+
+/* sort in descending order */
+SELECT name FROM customers ORDER BY name DESC;
+
