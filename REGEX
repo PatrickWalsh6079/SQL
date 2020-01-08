@@ -1,0 +1,11 @@
+/* USING REGULAR EXPRESSIONS */
+
+/* use the REGEXP keyword to filter on regular expressions */
+SELECT item_name FROM shopping WHERE item_name REGEXP 'table';
+
+/* use | to mean OR */
+SELECT id, item_name FROM shopping WHERE item_name REGEXP 'o|table';
+
+/* use [] to specify ranges and {} to limit number of characters */
+/* searches for digits 0-9 that are 3 characters long, followed by '.00' */
+SELECT id, item_name, cost FROM shopping WHERE cost REGEXP '[0-9]{3}.00';
